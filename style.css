@@ -1,0 +1,167 @@
+:root {
+    --dropdown-background-color: #fbfbfc;
+    --dropdown-border-color: #e1e6eb;
+    --dropdown-box-shadow: var(--card-box-shadow);
+    --dropdown-color: var(--color);
+    --dropdown-hover-background-color: hsl(205, 20%, 94%);
+}
+
+body {
+    margin: 0;
+    background-color: #ffffff;
+}
+
+.container {
+    padding-top: 0;
+    max-width: 80%;
+}
+
+nav {
+    background-color: #2c54a1;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+nav li a:link::before {
+    color: #c4c7cb;
+}
+
+nav li a:link:active {
+    color: white;
+}
+
+nav ol:last-of-type,
+nav ul:last-of-type {
+    color: white;
+}
+
+.discovering {
+    color: white;
+}
+
+h3 {
+    color: #24333f;
+    font-size: 2em;
+    margin-bottom: 0px;
+}
+
+.centrer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.section-2 {
+    background-color: #c4c7cb;
+    color: #24333f;
+    min-height: 15vh;
+    height: auto;
+    width: 100%;
+    bottom: 0;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: stretch;
+}
+
+.section-2 p {
+    color: #24333f;
+}
+
+.footer-principal {
+    background-color: #2c54a1;
+    bottom: 0;
+    height: auto;
+    width: 100%;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    padding-left: 3%;
+    padding-right: 3%;
+    text-align: center;
+    align-self: center;
+    color: white;
+}
+
+details[role=list] summary+ul,
+li[role=list]>ul {
+    background-color: white;
+    color: #24333f;
+    border: 0;
+}
+
+nav details[role=list] summary+ul,
+nav li[role=list]>ul {
+    border-radius: 0;
+}
+
+nav :where(a, [role=link]) {
+    color: white;
+}
+
+[role=link]:is([aria-current], :hover, :active, :focus),
+a:is([aria-current], :hover, :active, :focus) {
+    background-color: #1a376a;
+    text-decoration: none;
+}
+
+li[role=list] a:active~ul,
+li[role=list] a:focus~ul,
+li[role=list]:hover>ul {
+    color: #24333f;
+}
+
+details[role=list] summary+ul li a,
+li[role=list]>ul li a {
+    display: block;
+    margin: calc(var(--form-element-spacing-vertical) * -.5) calc(var(--form-element-spacing-horizontal) * -1);
+    padding: calc(var(--form-element-spacing-vertical) * .5) var(--form-element-spacing-horizontal);
+    overflow: hidden;
+    color: #24333f;
+    text-decoration: none;
+    text-overflow: ellipsis;
+}
+
+article {
+    background-color: white;
+}
+
+article h4,
+p {
+    color: #24333f;
+}
+
+article>header {
+    margin-top: calc(var(--block-spacing-vertical) * -1);
+    margin-bottom: var(--block-spacing-vertical);
+    border-bottom: var(--border-width) solid var(--card-border-color);
+    padding: 0;
+    border-top-right-radius: var(--border-radius);
+    border-top-left-radius: var(--border-radius);
+    background-position: center;
+    background-size: cover;
+    image-resolution: 16/9;
+}
+
+article>footer {
+    margin-top: var(--block-spacing-vertical);
+    margin-bottom: calc(var(--block-spacing-vertical) * -1);
+    border-top: 0px;
+    text-align: center;
+    background-color: #2c54a1;
+    color: white;
+}
+
+article>footer a {
+    margin-top: var(--block-spacing-vertical);
+    margin-bottom: calc(var(--block-spacing-vertical) * -1);
+    border-top: 0px;
+    text-align: center;
+    background-color: #2c54a1;
+    color: white;
+}
